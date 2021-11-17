@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".graphqlrc.json" />
+    <None Remove="Queries.graphql" />
+    <None Remove="schema.extensions.graphql" />
+    <None Remove="schema.graphql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include=".graphqlrc.json">
+      <GraphQLConfig>true</GraphQLConfig>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Queries.graphql">
+      <GraphQL>true</GraphQL>
+    </AdditionalFiles>
+    <AdditionalFiles Include="schema.extensions.graphql">
+      <GraphQL>true</GraphQL>
+    </AdditionalFiles>
+    <AdditionalFiles Include="schema.graphql">
+      <GraphQL>true</GraphQL>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.2.2" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.2.2" />
+  </ItemGroup>
+
+</Project>
