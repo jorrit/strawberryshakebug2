@@ -1,7 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <!-- https://andrewlock.net/creating-a-source-generator-part-6-saving-source-generator-output-in-source-control/ -->
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+	  <StrawberryShake_LogFile>c:\windows\temp\test.log</StrawberryShake_LogFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,8 +30,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.2.2" />
-    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.2.2" />
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.7.0-preview.24" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.7.0-preview.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Generated\" />
   </ItemGroup>
 
 </Project>
