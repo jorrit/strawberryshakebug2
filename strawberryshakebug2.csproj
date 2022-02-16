@@ -4,38 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <!-- https://andrewlock.net/creating-a-source-generator-part-6-saving-source-generator-output-in-source-control/ -->
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-	  <StrawberryShake_LogFile>c:\windows\temp\test.log</StrawberryShake_LogFile>
+	<StrawberryShake_LogFile>c:\windows\temp\test.log</StrawberryShake_LogFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".graphqlrc.json" />
-    <None Remove="Queries.graphql" />
-    <None Remove="schema.extensions.graphql" />
-    <None Remove="schema.graphql" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AdditionalFiles Include=".graphqlrc.json">
-      <GraphQLConfig>true</GraphQLConfig>
-    </AdditionalFiles>
-    <AdditionalFiles Include="Queries.graphql">
-      <GraphQL>true</GraphQL>
-    </AdditionalFiles>
-    <AdditionalFiles Include="schema.extensions.graphql">
-      <GraphQL>true</GraphQL>
-    </AdditionalFiles>
-    <AdditionalFiles Include="schema.graphql">
-      <GraphQL>true</GraphQL>
-    </AdditionalFiles>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.7.0-preview.24" />
-    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.7.0-preview.24" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Generated\" />
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.7.0-preview.27" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.7.0-preview.27" />
   </ItemGroup>
 
 </Project>
