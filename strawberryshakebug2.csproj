@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.7.0-preview.28" />
-    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.7.0-preview.28" />
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="13.0.0-preview.15" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="13.0.0-preview.15" />
   </ItemGroup>
 
 </Project>
